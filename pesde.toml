@@ -1,0 +1,26 @@
+name = "idkaboutbytes/valueobject"
+version = "1.0.1"
+description = "ValueObject package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/valueobject"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.2.1" }
+Brio = { repo = "idkaboutbytes/brio", rev = "v1.1.0" }
+DuckTypeUtils = { repo = "idkaboutbytes/ducktypeutils", rev = "v1.0.1" }
+Maid = { repo = "idkaboutbytes/maid", rev = "v1.1.0" }
+ValueBase = { repo = "idkaboutbytes/valuebase", rev = "v1.0.0" }
+Signal = { wally = "kineticwallet/lemon-signal", version = "^1.10.0" }
