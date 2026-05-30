@@ -1,0 +1,36 @@
+name = "idkaboutbytes/valueobject"
+version = "1.0.11"
+description = "ValueObject package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/valueobject"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+Subscription = { repo = "idkaboutbytes/subscription", rev = "v1.0.4" }
+Observable = { repo = "idkaboutbytes/observable", rev = "v1.0.5" }
+Rx = { repo = "idkaboutbytes/rx", rev = "v1.0.8" }
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.2.5" }
+Brio = { repo = "idkaboutbytes/brio", rev = "v1.2.5" }
+DuckTypeUtils = { repo = "idkaboutbytes/ducktypeutils", rev = "v1.0.5" }
+Maid = { repo = "idkaboutbytes/maid", rev = "v1.1.6" }
+ValueBase = { repo = "idkaboutbytes/valuebase", rev = "v1.0.7" }
+Signal = { wally = "kineticwallet/lemon-signal", version = "^1.10.0" }
+MaidTaskUtils = { repo = "idkaboutbytes/maidtaskutils", rev = "v1.0.3" }
+ValueBaseUtils = { repo = "idkaboutbytes/valuebaseutils", rev = "v1.0.0" }
+RxValueBaseUtils = { repo = "idkaboutbytes/rxvaluebaseutils", rev = "v1.0.0" }
